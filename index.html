@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -283,39 +283,94 @@
       </div>
     </div>
   </section>
-<div class="row justify-content-center">
-        <div class="col-lg-8">
-            <div class="card shadow-lg border-0 mb-4">
-                <div class="card-body p-5">
-                    <h1 class="mb-4 text-center"><i class="fas fa-users text-primary me-2"></i>About Us</h1>
-                    <p class="lead">PT SOLUSI DIGITAL ACADEMY INDONESIA adalah perusahaan bergerak dibidang jasa yang berfokus pada IT konsultansi, pembuatan serta pengembangan website, aplikasi, dan multimedia. Berbasis di Purwakarta, kami terdiri dari tim berpengalaman yang memberikan layanan purna jual terbaik. Kami melayani pemerintahan, UMKM, swasta dan perseorangan.</p>
-                    <div class="row mt-4">
-                        <div class="col-md-6 mb-3">
-                            <div class="card h-100 border-0 bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-2"><i class="fas fa-bullseye text-success me-2"></i>Our Mission</h4>
-                                    <p class="card-text">Menjadi mitra strategis terdepan dalam menyediakan solusi teknologi inovatif dan berkelanjutan untuk mendorong pertumbuhan bisnis dan pembangunan digital di Indonesia.</p>
-                                    <p class="card-text">Penghadirkan layanan IT konsultasi dan pengembangan aplikasi yang inovatif, berkualitas dan sesuai dengan kebituhan klien.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="card h-100 border-0 bg-light shadow-sm">
-                                <div class="card-body">
-                                    <h4 class="card-title mb-2"><i class="fas fa-eye text-info me-2"></i>Our Vision</h4>
- <ul class="list-unstyled misi-list text-start d-inline-block text-start">
-                <li><i class="fas fa-check-circle text-success me-2"></i> Memberikan layanan terbaik dan profesional.</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Mengembangkan inovasi berkelanjutan.</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Meningkatkan kesejahteraan anggota & masyarakat.</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Menjalin kemitraan strategis yang bermanfaat.</li>
-              </ul>                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="row justify-content-center px-3 px-md-0">
+  <div class="col-lg-8">
+    <div class="card shadow-lg border-0 mb-4">
+      <div class="card-body p-4 p-md-5">
+        
+        <!-- About Us -->
+        <h2 class="mb-4 text-center fw-bold">
+          <i class="fas fa-users text-primary me-2"></i>About Us
+        </h2>
+        <p class="lead text-justify">
+          PT SOLUSI DIGITAL ACADEMY INDONESIA adalah perusahaan bergerak dibidang jasa yang berfokus pada IT konsultansi, 
+          pembuatan serta pengembangan website, aplikasi, dan multimedia. Berbasis di Purwakarta, kami terdiri dari tim 
+          berpengalaman yang memberikan layanan purna jual terbaik. Kami melayani pemerintahan, UMKM, swasta dan perseorangan.
+        </p>
+
+        <!-- Mission & Vision -->
+        <div class="row mt-4 gy-3">
+          <!-- Mission -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 bg-light shadow-sm hover-card">
+              <div class="card-body">
+                <h4 class="card-title mb-3 fw-semibold">
+                  <i class="fas fa-bullseye text-success me-2"></i>Our Mission
+                </h4>
+                <p class="card-text mb-2">
+                  Menjadi mitra strategis terdepan dalam menyediakan solusi teknologi inovatif dan berkelanjutan untuk 
+                  mendorong pertumbuhan bisnis dan pembangunan digital di Indonesia.
+                </p>
+                <p class="card-text mb-0">
+                  Menghadirkan layanan IT konsultasi dan pengembangan aplikasi yang inovatif, berkualitas dan sesuai dengan kebutuhan klien.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <!-- Vision -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 bg-light shadow-sm hover-card">
+              <div class="card-body">
+                <h4 class="card-title mb-3 fw-semibold">
+                  <i class="fas fa-eye text-info me-2"></i>Our Vision
+                </h4>
+                <ul class="list-unstyled misi-list">
+                  <li><i class="fas fa-check-circle text-success me-2"></i> Memberikan layanan terbaik dan profesional.</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i> Mengembangkan inovasi berkelanjutan.</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i> Meningkatkan kesejahteraan anggota & masyarakat.</li>
+                  <li><i class="fas fa-check-circle text-success me-2"></i> Menjalin kemitraan strategis yang bermanfaat.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
+      </div>
     </div>
+  </div>
+</div>
+
+<style>
+/* Responsive enhancements */
+.card-body p,
+.misi-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Hover effect */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* List style fix */
+.misi-list li {
+  margin-bottom: 10px;
+}
+
+/* Text justify only on larger screens */
+@media (min-width: 768px) {
+  .text-justify {
+    text-align: justify;
+  }
+}
+</style>
+
   <!-- Services Section -->
   <section class="section services" id="services">
     <div class="container">
