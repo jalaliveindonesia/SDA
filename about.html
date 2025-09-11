@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="canonical" href="https://sda.candil.eu.org/about.html">
+  <link rel="canonical" href="https://sda.candil.eu.org/about.html">
+  <link rel="preload" as="image" href="https://candilkuya.com/assets/img/logo.svg">
+
+  <meta name="description" content="PT Solusi Digital Academy Indonesia adalah mitra terpercaya dalam menyelesaikan tantangan teknologi bisnis. Kami menyediakan solusi digital, perangkat lunak efektif, dan dukungan berkelanjutan untuk transformasi bisnis Anda.">
+
+  <meta name="keywords"
+    content="Web Development, UI/UX Design, branding services, digital marketing, graphic design, logo design, frontend development, full-stack solutions, responsive websites, e-commerce development, brand identity, online presence, visual communication, conversion-focused design, user experience, performance optimization, creative strategy, custom web solutions, brand consistency, business growth, innovative solutions, scalable design, authentic branding, client-centric, results-driven, strategic impact, modern aesthetics, digital transformation, design thinking, storytelling through design">
+  <meta name="author" content="Candilkuya">
+
+  <meta property="og:title" content="PT Solusi Digital Academy Indonesia">
+  <meta property="og:description" content="Clarity, Creativity and Conversion.">
+  <meta property="og:image" content="https://sda.candil.eu.org/logo.png">
+  <meta property="og:url" content="https://sda.candil.eu.org/about.html">
+  <meta property="og:type" content="website">
+
+  <meta name="copyright" content="© 2025 PT Solusi Digital Academy Indonesia IT Solutions. All rights reserved.">
+
+  <title>PT Solusi Digital Academy Indonesia Solutions</title>
+
+  <link rel="icon" type="https://candilkuya.com/assets/img/favicon.ico" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+.logo-img { max-width: 200px; /* batas ukuran terbesar di desktop */ height: auto; /* biar proporsional */ } @media (max-width: 768px) { .logo-img { max-width: 150px; /* lebih kecil di tablet */ } } @media (max-width: 480px) { .logo-img { max-width: 120px; /* lebih kecil di mobile */ } } .team-card img { object-fit: cover; } .team-card .card-body { padding: 20px; } /* Animasi muncul (fade-up) */ .fade-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; } .fade-up.visible { opacity: 1; transform: translateY(0); } /* Animasi hover card */ .team-card { transition: transform 0.4s ease, box-shadow 0.4s ease; border-radius: 16px; overflow: hidden; } .team-card:hover { transform: translateY(-8px) scale(1.03); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); } .team-card img { transition: transform 0.6s ease; } .team-card:hover img { transform: scale(1.08); } .chat-header, .chat-content, .message-input { position: fixed; right: 20px; width: 300px; background-color: #e5ddd5; z-index: 10002; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; } .chat-header { top: calc(100% - 420px); height: 60px; background-color: #075e54; color: white; padding: 10px; display: flex; align-items: center; border-radius: 12px 12px 0 0; } .avatar-container { position: relative; width: 40px; height: 40px; margin-right: 10px; } .chat-header img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; } .online-dot { position: absolute; bottom: 0; right: 0; width: 12px; height: 12px; background-color: #25d366; border-radius: 50%; border: 2px solid #075e54; } .chat-header-info { flex-grow: 1; } .chat-header h1 { font-size: 16px; font-weight: 600; margin-bottom: 0px; color: #fff !important; } .online-status { font-size: 12px; } .close-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.3s; } .close-btn:hover { background-color: rgba(255, 255, 255, 0.1); } .chat-content { top: calc(100% - 360px); height: 300px; padding: 20px; overflow-y: auto; } .message { max-width: 80%; padding: 8px 12px; margin-bottom: 10px; border-radius: 7.5px; position: relative; word-wrap: break-word; } .message.received { background-color: #ffffff; align-self: flex-start; } .message.sent { background-color: #dcf8c6; align-self: flex-end; margin-left: auto; } .message-input { bottom: 20px; height: 60px; display: flex; padding: 10px; background-color: #f0f0f0; border-radius: 0 0 12px 12px; } .whatsapp-btn { background-color: #25d366; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 12px; width: 100%; cursor: pointer; transition: background-color 0.3s; display: flex; align-items: center; justify-content: center; } .whatsapp-btn:hover { background-color: #128c7e; } .typing-indicator { background-color: #e5ddd5; padding: 10px; border-radius: 20px; display: inline-block; margin-bottom: 10px; } .typing-indicator span { height: 10px; width: 10px; float: left; margin: 0 1px; background-color: #9e9ea1; display: block; border-radius: 50%; opacity: 0.4; } .typing-indicator span:nth-of-type(1) { animation: 1s blink infinite 0.3333s; } .typing-indicator span:nth-of-type(2) { animation: 1s blink infinite 0.6666s; } .typing-indicator span:nth-of-type(3) { animation: 1s blink infinite 0.9999s; } @keyframes blink { 50% { opacity: 1; } } .chat-icon { position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; background-color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); z-index: 10001; animation: wave 2s infinite; } .chat-icon img { width: 35px; height: 35px; } @keyframes wave { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+</style>
+</head>
+
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo.png" alt="Rafenthic IT Solutions" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://blog.candilkuya.com">Artikel</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero position-relative d-flex align-items-center justify-content-center text-center">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-content text-white">
+    <h1 class="fw-bold display-4">PT Solusi Digital Academy Indonesia</h1>
+    <p class="lead">Mengenal PT Solusi Digital Academy Indonesia: Ahli dalam Pengembangan Website, Aplikasi, dan Multimedia</p>
+  </div>
+</section>
+
+<style>
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0f1c;
+}
+#heroCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+.hero-content h1,
+.hero-content p,
+.hero-content a {
+  color: #ffffff !important;
+}
+
+.hero-content .btn {
+  background: var(--primary, #0ea5e9);
+  border: none;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
+}
+
+</style>
+
+<script>
+const canvas = document.getElementById('heroCanvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.radius = Math.random() * 2 + 1;
+    this.vx = (Math.random() - 0.5) * 0.8;
+    this.vy = (Math.random() - 0.5) * 0.8;
+  }
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+
+    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = '#0ea5e9';
+    ctx.fill();
+  }
+}
+
+function initParticles() {
+  particles = [];
+  for (let i = 0; i < 100; i++) {
+    particles.push(new Particle());
+  }
+}
+
+function connectParticles() {
+  for (let a = 0; a < particles.length; a++) {
+    for (let b = a; b < particles.length; b++) {
+      let dx = particles[a].x - particles[b].x;
+      let dy = particles[a].y - particles[b].y;
+      let distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance < 120) {
+        ctx.beginPath();
+        ctx.strokeStyle = "rgba(14,165,233,0.2)";
+        ctx.lineWidth = 1;
+        ctx.moveTo(particles[a].x, particles[a].y);
+        ctx.lineTo(particles[b].x, particles[b].y);
+        ctx.stroke();
+        ctx.closePath();
+      }
+    }
+  }
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    p.update();
+    p.draw();
+  });
+  connectParticles();
+  requestAnimationFrame(animate);
+}
+
+initParticles();
+animate();
+</script>
+
+  <!-- About Section -->
+  <section class="section mt-5 pt-5 fade-up">
+    <div class="container">
+      <p class="lead text-justify">
+        PT Solusi Digital Academy Indonesia adalah perusahaan IT dengan tim berpengalaman yang berdedikasi untuk menyediakan layanan terbaik dalam pengembangan website, pembuatan aplikasi, dan produksi multimedia. Kami berkomitmen untuk membantu kesuksesan digital berbagai klien, mulai dari instansi pemerintah hingga UMKM, perusahaan swasta, dan individu. Mari berkolaborasi mewujudkan visi digital Anda!
+      </p>
+
+      <div class="row mt-5 gy-4">
+        <!-- Mission -->
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm hover-card h-100">
+            <div class="card-body">
+              <h4 class="card-title mb-3 fw-semibold">Tentang Kami</h4>
+              <p>
+                PT Solusi Digital Academy Indonesia adalah perusahaan bergerak dibidang jasa yang berfokus pada IT konsultansi, pembuatan serta pengembangan website, aplikasi, dan multimedia. Berbasis di Purwakarta, kami terdiri dari tim berpengalaman yang memberikan layanan purna jual terbaik. Kami melayani pemerintahan, UMKM, swasta dan perseorangan.
+              </p>
+              <p class="mb-0">
+                Menghadirkan layanan IT konsultasi dan pengembangan aplikasi yang inovatif, berkualitas, dan sesuai kebutuhan klien.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision -->
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm hover-card h-100">
+            <div class="card-body">
+              <h4 class="card-title mb-3 fw-semibold">Kami menyediakan beberapa layanan unggulan seperti:</h4>
+              <ul class="list-unstyled misi-list">
+                <li><i class="fas fa-check-circle text-success me-2"></i> Sistem Manajemen Stasiun Pengisian Daya Kendaraan Listrik.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Super Apps Pelayanan Publik.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Sistem Manajemen Audit.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Sistem Manajemen Sales Order.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Masterplan Teknologi.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Penyedia Aplikasi Koperasi Merah Putih.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Pembuatan E-Commerce.</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Pembuatan Company Profile.</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- Visi Misi Section -->
+<section class="section py-5 bg-light fade-up">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-4"><i class="fas fa-bullseye text-success me-2"></i>Visi & Misi</h2>
+        <p class="mb-3">
+          <strong>Menjadi mitra strategis terdepan</strong> dalam menyediakan solusi teknologi inovatif
+          dan berkelanjutan untuk mendorong pertumbuhan bisnis dan pembangunan digital di Indonesia.
+        </p>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-check-circle text-primary me-2"></i> Penghadirkan layanan IT konsultasi dan pengembangan aplikasi yang inovatif, berkualitas dan sesuai dengan kebituhan klien.</li>
+          <li><i class="fas fa-check-circle text-primary me-2"></i> Membantu bisnis dan organisasi beradaptasi dengan teknologi untuk meningkatkan efesiensi operasional dan daya saing.</li>
+          <li><i class="fas fa-check-circle text-primary me-2"></i> Berkontribusi dalam pencapaian Sustainable Development Goal's (SDGs) melalui solusi teknologi yang berdampak positif.</li>
+          <li><i class="fas fa-check-circle text-primary me-2"></i> Membangun tim profesional yang kompeten, kreatif dan inovatif untuk menghadirkan hasil terbaik bagi klien.</li>
+          <li><i class="fas fa-check-circle text-primary me-2"></i> Menjalin hubungan berbasis keercayaan, transparansi dan kolaborasi untuk pertumbuhan bersama klien dan mitra bisnis.</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://cdn.pixabay.com/photo/2016/04/20/08/21/entrepreneur-1340649_1280.jpg" alt="Visi Misi" class="img-fluid rounded-3 shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team Section -->
+<section class="section py-5 fade-up">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Team</h2>
+      <p>Kami terdiri dari para profesional berpengalaman di bidang IT, desain, dan marketing.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Team Member 1 -->
+      <div class="col-6 col-lg-3">
+        <div class="card border-0 shadow-lg team-card text-center h-100">
+          <img src="https://i.pravatar.cc/300?img=1" class="card-img-top rounded-top" alt="Team Member">
+          <div class="card-body">
+            <h5 class="fw-semibold mb-1">John Doe</h5>
+            <p class="text-muted">CEO & Founder</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-6 col-lg-3">
+        <div class="card border-0 shadow-lg team-card text-center h-100">
+          <img src="https://i.pravatar.cc/300?img=3" class="card-img-top rounded-top" alt="Team Member">
+          <div class="card-body">
+            <h5 class="fw-semibold mb-1">Jane Smith</h5>
+            <p class="text-muted">Lead Developer</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-6 col-lg-3">
+        <div class="card border-0 shadow-lg team-card text-center h-100">
+          <img src="https://i.pravatar.cc/300?img=4" class="card-img-top rounded-top" alt="Team Member">
+          <div class="card-body">
+            <h5 class="fw-semibold mb-1">Michael Lee</h5>
+            <p class="text-muted">UI/UX Designer</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-6 col-lg-3">
+        <div class="card border-0 shadow-lg team-card text-center h-100">
+          <img src="https://i.pravatar.cc/300?img=5" class="card-img-top rounded-top" alt="Team Member">
+          <div class="card-body">
+            <h5 class="fw-semibold mb-1">Sarah Connor</h5>
+            <p class="text-muted">Marketing Specialist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-4 mt-5 border-top">
+  <div class="container">
+    <div class="row">
+      <!-- Brand & Description -->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <a class="navbar-brand" href="https://candilkuya.com">
+          <img src="logo.png"
+            alt="Candil Kuya IT Solutions, best web development and Design service providers." width="200px">
+        </a>
+        <p class="footer-description">
+          Alamat: Jln Ahmad Yani, Kp Cikuya, Neglasari, Kec. Pagaden, Kabupaten Subang, Jawa Barat 41252
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/company" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.behance.net/" class="social-link"><i class="fab fa-behance"></i></a>
+          <a href="https://www.youtube.com/" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/" class="social-link"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.pinterest.com/" class="social-link"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+        <div class="footer-links">
+          <h4>Our Location</h4>
+          <div class="map-container" style="overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d742.119315789556!2d106.8038906459966!3d-6.224062502637757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sid!2sid!4v1756920519857!5m2!1sid!2sid" 
+              width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connect With Us -->
+      <div class="col-md-6 col-lg-4">
+        <div class="footer-links">
+          <h4>Connect With Us</h4>
+          <p>Tertarik bekerja sama dengan kami?</p>
+          <div class="social-media-platforms mt-4">
+            <div class="platform mb-3">
+              <a href="https://wa.me/+6283815432987" class="platform-link">
+                <i class="fab fa-whatsapp platform-icon"></i>
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+            <div class="platform mb-3">
+              <a href="https://linkedin.com/company" class="platform-link">
+                <i class="fab fa-linkedin-in platform-icon"></i>
+                <span>Follow our Linkedin Page</span>
+              </a>
+            </div>
+            <div class="platform">
+              <a href="#" class="platform-link">
+                <i class="fas fa-comment-dots platform-icon"></i>
+                <span>Live Chat Support</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="text-center py-4 mt-5 border-top">
+    <p class="mb-0">© 2025 PT Solusi Digital Academy Indonesia. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<div class="chat-header" id="chat-header">
+  <div class="avatar-container">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxROriMioWuqbkYSynSZlk7tC3xRDWZT7b3XIoKT8ahPT6OlRyJR_FS_WJ-d4OCV1tyBS4pfZ1SxqG8nlePDPu4J7KwQeD8dQEnx1BMpxnBXlOOlv0EAwuBZPmqSGMC3PF3Zy_h3gSa4tJqBt29tu-Syn6CFtPefcFNx31mOMdTpbQxrSKcbOZV9qsmU0/s1600/Candil%20Kuya.jpg" alt="Avatar">
+    <div class="online-dot"></div>
+  </div>
+  <div class="chat-header-info">
+    <h1 style="transform: translateY(2px);">Customer Service</h1>
+    <div style="color: #eeeeee;">online</div>
+
+  </div>
+  <button class="close-btn" id="close-btn">&times;</button>
+</div>
+<div class="chat-content" id="chat-content">
+</div>
+<div class="message-input" id="message-input">
+  <button class="whatsapp-btn" id="whatsapp-btn">Chat Sekarang</button>
+</div>
+<div class="chat-icon" id="chat-icon">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</div>
+<script>
+// Animasi scroll
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible')}})},{threshold:0.15});document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));document.addEventListener("DOMContentLoaded",()=>{const chatHeader=document.getElementById("chat-header");const chatContent=document.getElementById("chat-content");const messageInput=document.getElementById("message-input");const closeBtn=document.getElementById("close-btn");const whatsappBtn=document.getElementById("whatsapp-btn");const chatIcon=document.getElementById("chat-icon");let isFirstOpen=!0;let hasBeenOpened=!1;function showChat(){chatIcon.style.display="none";chatHeader.style.display="flex";chatContent.style.display="block";messageInput.style.display="flex";setTimeout(()=>{chatHeader.style.opacity="1";chatHeader.style.transform="translateY(0)";chatContent.style.opacity="1";chatContent.style.transform="translateY(0)";messageInput.style.opacity="1";messageInput.style.transform="translateY(0)"},50);if(isFirstOpen){setTimeout(showTypingIndicator,1000);isFirstOpen=!1}
+hasBeenOpened=!0}
+function hideChat(){chatHeader.style.opacity="0";chatHeader.style.transform="translateY(20px)";chatContent.style.opacity="0";chatContent.style.transform="translateY(20px)";messageInput.style.opacity="0";messageInput.style.transform="translateY(20px)";setTimeout(()=>{chatHeader.style.display="none";chatContent.style.display="none";messageInput.style.display="none";chatIcon.style.display="flex"},500)}
+let autoOpenTimeout=setTimeout(()=>{if(!hasBeenOpened){showChat()}},3000);closeBtn.addEventListener("click",hideChat);chatIcon.addEventListener("click",(e)=>{e.preventDefault();clearTimeout(autoOpenTimeout);showChat()});whatsappBtn.addEventListener("click",()=>{window.open("https://api.whatsapp.com/send/?phone=%2B6283815432987&text&type=phone_number&app_absent=0","_blank")});function showTypingIndicator(){const typingIndicator=document.createElement("div");typingIndicator.className="typing-indicator";typingIndicator.innerHTML="<span></span><span></span><span></span>";chatContent.appendChild(typingIndicator);chatContent.scrollTop=chatContent.scrollHeight;setTimeout(()=>{typingIndicator.remove();showIncomingMessage()},3000)}
+function showIncomingMessage(){const incomingMessage=document.createElement("div");incomingMessage.className="message received";incomingMessage.textContent="Kami menyediakan layanan pembuatan website, aplikasi, dan multimedia untuk mendukung kebutuhan Anda.";chatContent.appendChild(incomingMessage);chatContent.scrollTop=chatContent.scrollHeight}})
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
