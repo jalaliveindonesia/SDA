@@ -45,7 +45,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <img src="logopt.png" alt="PT Solusi Digital Academy Indonesia" class="logo-img">
+      <img src="dai.jpg" alt="PT Solusi Digital Academy Indonesia" class="logo-img">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -356,7 +356,7 @@ animate();
           <p>Tertarik bekerja sama dengan kami?</p>
           <div class="social-media-platforms mt-4">
             <div class="platform mb-3">
-              <a href="https://wa.me/+6283815432987" class="platform-link">
+              <a href="https://wa.me/+6285210988700" class="platform-link">
                 <i class="fab fa-whatsapp platform-icon"></i>
                 <span>Chat on WhatsApp</span>
               </a>
@@ -390,7 +390,7 @@ animate();
     <div class="online-dot"></div>
   </div>
   <div class="chat-header-info">
-    <h1 style="transform: translateY(2px);">Customer Service</h1>
+    <h1 style="transform: translateY(2px);">Live Chat</h1>
     <div style="color: #eeeeee;">online</div>
 
   </div>
@@ -409,7 +409,7 @@ animate();
 const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible')}})},{threshold:0.15});document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));document.addEventListener("DOMContentLoaded",()=>{const chatHeader=document.getElementById("chat-header");const chatContent=document.getElementById("chat-content");const messageInput=document.getElementById("message-input");const closeBtn=document.getElementById("close-btn");const whatsappBtn=document.getElementById("whatsapp-btn");const chatIcon=document.getElementById("chat-icon");let isFirstOpen=!0;let hasBeenOpened=!1;function showChat(){chatIcon.style.display="none";chatHeader.style.display="flex";chatContent.style.display="block";messageInput.style.display="flex";setTimeout(()=>{chatHeader.style.opacity="1";chatHeader.style.transform="translateY(0)";chatContent.style.opacity="1";chatContent.style.transform="translateY(0)";messageInput.style.opacity="1";messageInput.style.transform="translateY(0)"},50);if(isFirstOpen){setTimeout(showTypingIndicator,1000);isFirstOpen=!1}
 hasBeenOpened=!0}
 function hideChat(){chatHeader.style.opacity="0";chatHeader.style.transform="translateY(20px)";chatContent.style.opacity="0";chatContent.style.transform="translateY(20px)";messageInput.style.opacity="0";messageInput.style.transform="translateY(20px)";setTimeout(()=>{chatHeader.style.display="none";chatContent.style.display="none";messageInput.style.display="none";chatIcon.style.display="flex"},500)}
-let autoOpenTimeout=setTimeout(()=>{if(!hasBeenOpened){showChat()}},3000);closeBtn.addEventListener("click",hideChat);chatIcon.addEventListener("click",(e)=>{e.preventDefault();clearTimeout(autoOpenTimeout);showChat()});whatsappBtn.addEventListener("click",()=>{window.open("https://api.whatsapp.com/send/?phone=%2B6283815432987&text&type=phone_number&app_absent=0","_blank")});function showTypingIndicator(){const typingIndicator=document.createElement("div");typingIndicator.className="typing-indicator";typingIndicator.innerHTML="<span></span><span></span><span></span>";chatContent.appendChild(typingIndicator);chatContent.scrollTop=chatContent.scrollHeight;setTimeout(()=>{typingIndicator.remove();showIncomingMessage()},3000)}
+let autoOpenTimeout=setTimeout(()=>{if(!hasBeenOpened){showChat()}},3000);closeBtn.addEventListener("click",hideChat);chatIcon.addEventListener("click",(e)=>{e.preventDefault();clearTimeout(autoOpenTimeout);showChat()});whatsappBtn.addEventListener("click",()=>{window.open("https://api.whatsapp.com/send/?phone=%2B6285210988700&text&type=phone_number&app_absent=0","_blank")});function showTypingIndicator(){const typingIndicator=document.createElement("div");typingIndicator.className="typing-indicator";typingIndicator.innerHTML="<span></span><span></span><span></span>";chatContent.appendChild(typingIndicator);chatContent.scrollTop=chatContent.scrollHeight;setTimeout(()=>{typingIndicator.remove();showIncomingMessage()},3000)}
 function showIncomingMessage(){const incomingMessage=document.createElement("div");incomingMessage.className="message received";incomingMessage.textContent="Kami menyediakan layanan pembuatan website, aplikasi, dan multimedia untuk mendukung kebutuhan Anda.";chatContent.appendChild(incomingMessage);chatContent.scrollTop=chatContent.scrollHeight}})
 </script>
 
