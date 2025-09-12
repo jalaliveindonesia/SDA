@@ -34,7 +34,7 @@
 
   <title>PT Solusi Digital Academy Indonesia Solutions | Clarity Creativity Conversion</title>
 
-  <link rel="icon" type="https://candilkuya.com/assets/img/favicon.ico" href="favicon.png">
+  <link rel="icon" type="https://candilkuya.com/assets/img/favicon.ico" href="dai.jpg">
 
   <!-- Google tag (gtag.js) -->
 <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DCVW18YLN"></script>
@@ -51,14 +51,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style> .chat-header, .chat-content, .message-input { position: fixed; right: 20px; width: 300px; background-color: #e5ddd5; z-index: 10002; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; } .chat-header { top: calc(100% - 420px); height: 60px; background-color: #075e54; color: white; padding: 10px; display: flex; align-items: center; border-radius: 12px 12px 0 0; } .avatar-container { position: relative; width: 40px; height: 40px; margin-right: 10px; } .chat-header img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; } .online-dot { position: absolute; bottom: 0; right: 0; width: 12px; height: 12px; background-color: #25d366; border-radius: 50%; border: 2px solid #075e54; } .chat-header-info { flex-grow: 1; } .chat-header h1 { font-size: 16px; font-weight: 600; margin-bottom: 0px; color: #fff !important; } .online-status { font-size: 12px; } .close-btn { background: none; border: none; color: white; font-size: 24px; cursor: pointer; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background-color 0.3s; } .close-btn:hover { background-color: rgba(255, 255, 255, 0.1); } .chat-content { top: calc(100% - 360px); height: 300px; padding: 20px; overflow-y: auto; } .message { max-width: 80%; padding: 8px 12px; margin-bottom: 10px; border-radius: 7.5px; position: relative; word-wrap: break-word; } .message.received { background-color: #ffffff; align-self: flex-start; } .message.sent { background-color: #dcf8c6; align-self: flex-end; margin-left: auto; } .message-input { bottom: 20px; height: 60px; display: flex; padding: 10px; background-color: #f0f0f0; border-radius: 0 0 12px 12px; } .whatsapp-btn { background-color: #25d366; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 12px; width: 100%; cursor: pointer; transition: background-color 0.3s; display: flex; align-items: center; justify-content: center; } .whatsapp-btn:hover { background-color: #128c7e; } .typing-indicator { background-color: #e5ddd5; padding: 10px; border-radius: 20px; display: inline-block; margin-bottom: 10px; } .typing-indicator span { height: 10px; width: 10px; float: left; margin: 0 1px; background-color: #9e9ea1; display: block; border-radius: 50%; opacity: 0.4; } .typing-indicator span:nth-of-type(1) { animation: 1s blink infinite 0.3333s; } .typing-indicator span:nth-of-type(2) { animation: 1s blink infinite 0.6666s; } .typing-indicator span:nth-of-type(3) { animation: 1s blink infinite 0.9999s; } @keyframes blink { 50% { opacity: 1; } } .chat-icon { position: fixed; bottom: 90px; right: 30px; width: 50px; height: 50px; background-color: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); z-index: 10001; animation: wave 2s infinite; } .chat-icon img { width: 35px; height: 35px; } @keyframes wave { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+</style>
 </head>
 
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="https://sda.candil.eu.org/"><img src="dai.jpg"
+      <a class="navbar-brand" href="https://sda.candil.eu.org/"><img src="sdailogo.png"
           alt="PT Solusi Digital Academy Indonesia, best web development and Design service providers." width="200px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,13 +69,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">Tentang Kami</a>
+            <a class="nav-link" href="/about">Tentang Kami</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services">Layanan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://candilkuya.com/#portfolio">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Kontak</a>
@@ -100,7 +102,7 @@
               Kami menyediakan layanan <span>pembuatan website</span>,  aplikasi dan <span>multimedia</span>, untuk mendukung kebutuhan Anda.
             </p>
             <div class="d-flex flex-wrap gap-3">
-              <a href="#about"
+              <a href="#services"
                 class="btn btn-primary-custom animate__animated animate__fadeInUp animate__delay-1s">Lihat Selengkapnya</a>
               <a href="https://api.whatsapp.com/send?phone=6285210988700&text=Hallo%20SOLUSI%20DIGITAL%20ACADEMY%2C%20"
                 class="btn btn-outline-custom animate__animated animate__fadeInUp animate__delay-1s">Konsultasi Sekarang</a>
@@ -209,21 +211,82 @@
   </section>
 
   <!-- About Section -->
-  <section class="section" id="about">
+ 
+  <!-- Services Section -->
+  <section class="section services" id="services">
     <div class="container">
       <h2 class="section-title animate__animated animate__fadeIn">
         Layanan Kami
       </h2>
+    
+      <div class="row">
+  <!-- IT Konsultan -->
+  <div class="col-md-6 col-lg-6 d-flex animate__animated animate__fadeInUp">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-user-tie"></i>
+      </div>
+      <h3 class="service-title">IT Konsultan</h3>
+      <p class="service-description">
+        Kami membantu bisnis mengidentifikasi kebutuhan teknologi, merancang solusi, dan strategi digital yang efektif untuk pertumbuhan di era digital.
+      </p>
+    </div>
+  </div>
+
+  <!-- Pengembang Aplikasi -->
+  <div class="col-md-6 col-lg-6 d-flex animate__animated animate__fadeInUp animate__delay-1s">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <h3 class="service-title">Pengembang Aplikasi</h3>
+      <p class="service-description">
+        Layanan pengembangan aplikasi web dan mobile yang user-friendly dan scalable, mulai dari analisis, desain, pengembangan, hingga pemeliharaan.
+      </p>
+    </div>
+  </div>
+
+  <!-- Infrastruktur Server -->
+  <div class="col-md-6 col-lg-6 d-flex animate__animated animate__fadeInUp animate__delay-2s">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-server"></i>
+      </div>
+      <h3 class="service-title">Infrastruktur Server</h3>
+      <p class="service-description">
+        Solusi server yang andal, aman, dan berperforma tinggi, dirancang sesuai kebutuhan bisnis dari skala kecil hingga enterprise.
+      </p>
+    </div>
+  </div>
+
+  <!-- E-Government -->
+  <div class="col-md-6 col-lg-6 d-flex animate__animated animate__fadeInUp">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-city"></i>
+      </div>
+      <h3 class="service-title">E-Government</h3>
+      <p class="service-description">
+        Mendukung digitalisasi layanan publik, Smart City, dan Smart Government dengan transparansi, efisiensi, dan pelayanan yang responsif.
+      </p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+   <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeIn">
+       Mengapa Memilih SDAI?
+      </h2>
       <div class="row">
         <div class="col-lg-6">
           <div class="about-text animate__animated animate__fadeInLeft">
-            <h3>Who We Are</h3>
             <p>
-             PT. Solusi Digital Academy Indonesia menyediakan jasa IT Konsultan untuk membantu bisnis terkait teknologi. Kami membantu mengidentifikasi kebutuhan, merancang solusi, dan strategi digital yang efektif untuk mendukung pertumbuhan bisnis di era digital.
-            </p>
-            <p>
-             PT. Solusi Digital Academy Indonesia menawarkan layanan pengembangan aplikasi web dan mobile yang user-friendly dan scalable. Kami mencakup analisis, desain, pengembangan, hingga pemeliharaan dengan teknologi terkini.
-            </p>
+PT. Solusi Digital Academy Indonesia merupakan mitra terpercaya dalam menyelesaikan tantangan teknologi bisnis di era digital. Kami membantu klien dengan menganalisis permasalahan, merancang strategi solusi, dan menyediakan perangkat lunak yang efektif serta pencegahan masalah di masa depan. Kami berkomitmen untuk memberikan layanan optimal dan tepat waktu, serta dukungan berkelanjutan untuk memastikan sistem berfungsi dengan baik dan dapat disesuaikan dengan kebutuhan bisnis.PT Solusi Digital Academy Indonesia siap menjadi mitra strategis dalam transformasi digital bisnis Anda. </p>
+   
             <div class="row mt-4">
               <div class="col-md-6">
                 <div class="d-flex align-items-center mb-3">
@@ -251,29 +314,29 @@
         <div class="col-lg-6">
           <div class="stats-container animate__animated animate__fadeInRight">
             <div class="stat-card">
-              <div class="stat-number" data-count="40">782</div>
-              <div class="stat-title">Satisfied Customers</div>
+              <div class="stat-number" data-count="40">982</div>
+              <div class="stat-title">Pelanggan yang Puas</div>
               <div class="stat-icon">
                 <i class="fas fa-users"></i>
               </div>
             </div>
             <div class="stat-card">
               <div class="stat-number" data-count="3">8</div>
-              <div class="stat-title">Years of Experience</div>
+              <div class="stat-title">Tahun Pengalaman</div>
               <div class="stat-icon">
                 <i class="fas fa-calendar-alt"></i>
               </div>
             </div>
             <div class="stat-card">
               <div class="stat-number" data-count="100">1500</div>
-              <div class="stat-title">Projects Completed</div>
+              <div class="stat-title">Proyek Selesai</div>
               <div class="stat-icon">
                 <i class="fas fa-project-diagram"></i>
               </div>
             </div>
             <div class="stat-card">
               <div class="stat-number" data-count="24">10</div>
-              <div class="stat-title">Expert Team Members</div>
+              <div class="stat-title">Anggota Tim Ahli</div>
               <div class="stat-icon">
                 <i class="fas fa-user-tie"></i>
               </div>
@@ -283,184 +346,185 @@
       </div>
     </div>
   </section>
-<div class="justify-content-center px-3 px-md-0">
-  <div class="col-lg-8">
-    <div class="card shadow-lg border-0 mb-4">
-      <div class="card-body p-4 p-md-5">
-        
-        <!-- About Us -->
-        <h2 class="mb-4 text-center fw-bold">
-          <i class="fas fa-users text-primary me-2"></i>About Us
-        </h2>
-        <p class="lead text-justify">
-          PT SOLUSI DIGITAL ACADEMY INDONESIA adalah perusahaan bergerak dibidang jasa yang berfokus pada IT konsultansi, 
-          pembuatan serta pengembangan website, aplikasi, dan multimedia. Berbasis di Purwakarta, kami terdiri dari tim 
-          berpengalaman yang memberikan layanan purna jual terbaik. Kami melayani pemerintahan, UMKM, swasta dan perseorangan.
-        </p>
 
-        <!-- Mission & Vision -->
-        <div class="row mt-4 gy-3">
-          <!-- Mission -->
-          <div class="col-12 col-md-6">
-            <div class="card h-100 border-0 bg-light shadow-sm hover-card">
-              <div class="card-body">
-                <h4 class="card-title mb-3 fw-semibold">
-                  <i class="fas fa-bullseye text-success me-2"></i>Our Mission
-                </h4>
-                <p class="card-text mb-2">
-                  Menjadi mitra strategis terdepan dalam menyediakan solusi teknologi inovatif dan berkelanjutan untuk 
-                  mendorong pertumbuhan bisnis dan pembangunan digital di Indonesia.
-                </p>
-                <p class="card-text mb-0">
-                  Menghadirkan layanan IT konsultasi dan pengembangan aplikasi yang inovatif, berkualitas dan sesuai dengan kebutuhan klien.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Vision -->
-          <div class="col-12 col-md-6">
-            <div class="card h-100 border-0 bg-light shadow-sm hover-card">
-              <div class="card-body">
-                <h4 class="card-title mb-3 fw-semibold">
-                  <i class="fas fa-eye text-info me-2"></i>Our Vision
-                </h4>
-                <ul class="list-unstyled misi-list">
-                  <li><i class="fas fa-check-circle text-success me-2"></i> Memberikan layanan terbaik dan profesional.</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i> Mengembangkan inovasi berkelanjutan.</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i> Meningkatkan kesejahteraan anggota & masyarakat.</li>
-                  <li><i class="fas fa-check-circle text-success me-2"></i> Menjalin kemitraan strategis yang bermanfaat.</li>
-                </ul>
-              </div>
-            </div>
+  <section id="portfolio" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Portofolio Kami</h2>
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6">
+        <div class="portfolio-card">
+          <img src="https://candilkuya.com/assets/portfolio/resto.jpg" alt="Proyek 1" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Website Perusahaan</h3>
+            <p class="portfolio-desc">Pengembangan website company profile modern dan responsif.</p>
           </div>
         </div>
+      </div>
 
+      <!-- Project 2 -->
+      <div class="col-md-6">
+        <div class="portfolio-card">
+          <img src="https://candilkuya.com/assets/portfolio/pengajuan-kom-lab.jpg" alt="Proyek 2" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Aplikasi Mobile</h3>
+            <p class="portfolio-desc">Aplikasi Android & iOS untuk efisiensi bisnis digital.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6">
+        <div class="portfolio-card">
+          <img src="https://candilkuya.com/assets/portfolio/pinjam-buku-perpus.jpg" alt="Proyek 3" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Sistem E-Gov</h3>
+            <p class="portfolio-desc">Implementasi Smart City dan Smart Government.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6">
+        <div class="portfolio-card">
+          <img src="https://candilkuya.com/assets/portfolio/pengaduan-pln.jpg" alt="Proyek 4" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <h3 class="portfolio-title">Cloud Infrastructure</h3>
+            <p class="portfolio-desc">Penyediaan server cloud yang scalable dan aman.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <style>
-/* Responsive enhancements */
-.card-body p,
-.misi-list li {
-  font-size: 0.95rem;
-  line-height: 1.6;
+#portfolio {
+  background: #f7f8fa;
 }
-
-/* Hover effect */
-.hover-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform .3s ease;
 }
-.hover-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.portfolio-card:hover {
+  transform: translateY(-8px);
 }
-
-/* List style fix */
-.misi-list li {
+.portfolio-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(14,165,233,0.85); /* biru transparan */
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: opacity .3s ease;
+}
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+.portfolio-title {
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
+.portfolio-desc {
+  font-size: 14px;
+}
+</style>
+<section id="brands" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Trusted By</h2>
+    <div class="brands-wrapper">
+      <div class="brand-slide">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438395.webp" alt="Brand 1">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438564.webp" alt="Brand 2">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438313.webp" alt="Brand 3">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749439091.webp" alt="Brand 4">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749439888.webp" alt="Brand 5">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438691.webp" alt="Brand 6">
+      </div>
+      <!-- clone biar looping -->
+      <div class="brand-slide">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438395.webp" alt="Brand 1">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438564.webp" alt="Brand 2">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438313.webp" alt="Brand 3">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749439091.webp" alt="Brand 4">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749439888.webp" alt="Brand 5">
+        <img src="https://zenmultimedia.co.id/storage/uploads/client-section/1749438691.webp" alt="Brand 6">
+      </div>
+    </div>
+  </div>
+</section>
 
-/* Text justify only on larger screens */
-@media (min-width: 768px) {
-  .text-justify {
-    text-align: justify;
+<style>
+#brands {
+  background: #f7f8fa;
+}
+.brands-wrapper {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.brand-slide {
+  display: flex;
+  gap: 60px;
+  animation: scroll 20s linear infinite;
+}
+.brand-slide img {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+.brand-slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brand-slide {
+    gap: 30px;
+  }
+  .brand-slide img {
+    height: 45px;
+  }
+}
+@media (max-width: 480px) {
+  .brand-slide img {
+    height: 35px;
   }
 }
 </style>
 
-  <!-- Services Section -->
-  <section class="section services" id="services">
-    <div class="container">
-      <h2 class="section-title animate__animated animate__fadeIn">
-        Our Services
-      </h2>
-      <p class="text-center mb-5 animate__animated animate__fadeIn">
-        We offer comprehensive digital solutions to help your business thrive
-        online.
-      </p>
-      <div class="row">
-        <div class="col-md-6 col-lg-4 d-flex animate__animated animate__fadeInUp">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3 class="service-title">Custom Web Development</h3>
-            <p class="service-description">
-              We build fast, secure, and responsive websites tailored to your unique business needs.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h3 class="service-title">Web-Based Management System</h3>
-            <p class="service-description">
-              Streamline your operations with powerful, easy-to-use online management systems designed just for you.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h3 class="service-title">Social Media Management and Marketing</h3>
-            <p class="service-description">
-              We grow your online presence through engaging content, ads, and strategy on platforms like Facebook,
-              Instagram, and more.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex animate__animated animate__fadeInUp">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-bullhorn"></i>
-            </div>
-            <h3 class="service-title">Brand Identity and Logo Design</h3>
-            <p class="service-description">
-              Stand out with a professional logo and cohesive brand identity that tells your story at a glance.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex animate__animated animate__fadeInUp animate__delay-1s">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-palette"></i>
-            </div>
-            <h3 class="service-title">UI/UX Design Services</h3>
-            <p class="service-description">
-              We design clean, user-friendly interfaces that improve customer experience and boost engagement.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex animate__animated animate__fadeInUp animate__delay-2s">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-search"></i>
-            </div>
-            <h3 class="service-title">Startup and Business Launch Support</h3>
-            <p class="service-description">
-              From planning to launch, we help you build and grow your startup with the right tools and guidance.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact Section -->
   <section class="section" id="contact">
     <div class="container">
       <h2 class="section-title animate__animated animate__fadeIn">
-        Get In Touch
+        Hubungi Kami
       </h2>
       <p class="text-center mb-5 animate__animated animate__fadeIn">
-        Ready to start your project? Reach out to us through any of these channels.
+        Siap memulai proyek Anda? Hubungi kami melalui salah satu saluran berikut.
       </p>
       <div class="row justify-content-center">
         <div class="col-md-4 mb-4">
@@ -477,8 +541,8 @@
             <div class="contact-icon mb-3">
               <i class="fas fa-phone-alt fa-2x" style="color: var(--color-primary)"></i>
             </div>
-            <h4>Call Us</h4>
-            <p class="mb-1">083815432987</p>
+            <h4>Hubungi Kami</h4>
+            <p class="mb-1">085210988700</p>
           </div>
         </div>
         <div class="col-md-4 mb-4">
@@ -487,7 +551,7 @@
               <i class="fab fa-whatsapp fa-2x" style="color: var(--color-primary)"></i>
             </div>
             <h4>WhatsApp</h4>
-            <p><a href="https://wa.me/+6283815432987" target="_blank"
+            <p><a href="https://wa.me/+6285210988700" target="_blank"
                 style="color:inherit;text-decoration:underline;">Chat Now</a></p>
           </div>
         </div>
@@ -501,7 +565,7 @@
       <!-- Brand & Description -->
       <div class="col-lg-4 mb-5 mb-lg-0">
         <a class="navbar-brand" href="https://candilkuya.com">
-          <img src="logo.png"
+          <img src="sdailogo.png"
             alt="Candil Kuya IT Solutions, best web development and Design service providers." width="200px">
         </a>
         <p class="footer-description">
@@ -522,7 +586,7 @@
       <!-- Google Map -->
       <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
         <div class="footer-links">
-          <h4>Our Location</h4>
+          <h4>Lokasi</h4>
           <div class="map-container" style="overflow:hidden; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d742.119315789556!2d106.8038906459966!3d-6.224062502637757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sid!2sid!4v1756920519857!5m2!1sid!2sid" 
@@ -535,17 +599,17 @@
       <!-- Connect With Us -->
       <div class="col-md-6 col-lg-4">
         <div class="footer-links">
-          <h4>Connect With Us</h4>
+          <h4>Hubungi Kami</h4>
           <p>Tertarik bekerja sama dengan kami?</p>
           <div class="social-media-platforms mt-4">
             <div class="platform mb-3">
               <a href="https://wa.me/+6285210988700" class="platform-link">
                 <i class="fab fa-whatsapp platform-icon"></i>
-                <span>Chat on WhatsApp</span>
+                <span>Chat WhatsApp</span>
               </a>
             </div>
             <div class="platform mb-3">
-              <a href="https://linkedin.com/company" class="platform-link">
+              <a href="https://linkedin.com/" class="platform-link">
                 <i class="fab fa-linkedin-in platform-icon"></i>
                 <span>Follow our Linkedin Page</span>
               </a>
@@ -569,10 +633,38 @@
 </footer>
   <!-- Back to Top Button -->
   <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+<div class="chat-header" id="chat-header">
+  <div class="avatar-container">
+    <img src="dai.jpg" alt="Avatar">
+    <div class="online-dot"></div>
+  </div>
+  <div class="chat-header-info">
+    <h1 style="transform: translateY(2px);">Live Chat</h1>
+    <div style="color: #eeeeee;">online</div>
 
+  </div>
+  <button class="close-btn" id="close-btn">&times;</button>
+</div>
+<div class="chat-content" id="chat-content">
+</div>
+<div class="message-input" id="message-input">
+  <button class="whatsapp-btn" id="whatsapp-btn">Chat Sekarang</button>
+</div>
+<div class="chat-icon" id="chat-icon">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</div>
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="script.js"></script>
+
+  <script>
+// Animasi scroll
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible')}})},{threshold:0.15});document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));document.addEventListener("DOMContentLoaded",()=>{const chatHeader=document.getElementById("chat-header");const chatContent=document.getElementById("chat-content");const messageInput=document.getElementById("message-input");const closeBtn=document.getElementById("close-btn");const whatsappBtn=document.getElementById("whatsapp-btn");const chatIcon=document.getElementById("chat-icon");let isFirstOpen=!0;let hasBeenOpened=!1;function showChat(){chatIcon.style.display="none";chatHeader.style.display="flex";chatContent.style.display="block";messageInput.style.display="flex";setTimeout(()=>{chatHeader.style.opacity="1";chatHeader.style.transform="translateY(0)";chatContent.style.opacity="1";chatContent.style.transform="translateY(0)";messageInput.style.opacity="1";messageInput.style.transform="translateY(0)"},50);if(isFirstOpen){setTimeout(showTypingIndicator,1000);isFirstOpen=!1}
+hasBeenOpened=!0}
+function hideChat(){chatHeader.style.opacity="0";chatHeader.style.transform="translateY(20px)";chatContent.style.opacity="0";chatContent.style.transform="translateY(20px)";messageInput.style.opacity="0";messageInput.style.transform="translateY(20px)";setTimeout(()=>{chatHeader.style.display="none";chatContent.style.display="none";messageInput.style.display="none";chatIcon.style.display="flex"},500)}
+let autoOpenTimeout=setTimeout(()=>{if(!hasBeenOpened){showChat()}},3000);closeBtn.addEventListener("click",hideChat);chatIcon.addEventListener("click",(e)=>{e.preventDefault();clearTimeout(autoOpenTimeout);showChat()});whatsappBtn.addEventListener("click",()=>{window.open("https://api.whatsapp.com/send/?phone=%2B6285210988700&text&type=phone_number&app_absent=0","_blank")});function showTypingIndicator(){const typingIndicator=document.createElement("div");typingIndicator.className="typing-indicator";typingIndicator.innerHTML="<span></span><span></span><span></span>";chatContent.appendChild(typingIndicator);chatContent.scrollTop=chatContent.scrollHeight;setTimeout(()=>{typingIndicator.remove();showIncomingMessage()},3000)}
+function showIncomingMessage(){const incomingMessage=document.createElement("div");incomingMessage.className="message received";incomingMessage.textContent="Kami menyediakan layanan pembuatan website, aplikasi, dan multimedia untuk mendukung kebutuhan Anda.";chatContent.appendChild(incomingMessage);chatContent.scrollTop=chatContent.scrollHeight}})
+</script>
 </body>
 </html>
